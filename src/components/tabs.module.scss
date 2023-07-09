@@ -1,0 +1,35 @@
+.tabs {
+  width:100%;
+  padding: 1rem 0;
+  font-size:1.2rem;
+
+  ul {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items:center;
+    border-bottom:1px solid #fff;
+
+    :global li {
+      position:relative;
+      padding:1rem 3rem;
+      text-align: center;
+      cursor:pointer;
+
+      &.selected {
+        font-weight: bold;
+        &::after {
+          content:'';
+          position:absolute;
+          bottom:0;
+          left:0;
+          height:4px;
+          background-color:#fff;
+          width:100%;
+        }
+      }
+    }
+  }
+
+}

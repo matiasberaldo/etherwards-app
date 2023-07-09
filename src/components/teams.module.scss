@@ -1,0 +1,46 @@
+.teams {
+  width:100%;
+  padding: 1rem 0;
+  font-size:1.2rem;
+
+:global .title {
+    display: block;
+    width:100%;
+    padding:.8rem 0;
+    font-size:1.2rem;
+    font-weight:bold;
+    border-bottom:1px solid #fff;
+    margin-bottom:2rem;
+  }
+
+  :global .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:130px;
+    border: 1px solid #fff;
+    border-radius:5px;
+    box-sizing: border-box;
+    padding:2rem;
+
+    &:not(:last-of-type) {
+      margin-bottom:2rem;
+    }
+
+    .name {
+      font-weight:bold;
+    }
+  }
+
+  :global .show-more {
+    text-align:center;
+    font-size:1rem;
+    margin-bottom:1.5rem;
+    a {
+      text-decoration: underline;
+      span {
+        text-decoration: none;
+      }
+    }
+  }
+}

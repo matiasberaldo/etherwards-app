@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color:#000;
+
+  :global .wrapper {
+    width:100%;
+    max-width:1400px;
+    margin: 0 auto;
+
+    .award {
+      text-align: center;
+      h1 {
+        font-size:1.5rem;
+        font-weight: normal;
+        margin-bottom:1rem;
+      }
+      & > p {
+        font-size:2rem;
+        font-weight: bold;
+      }
+
+      .from {
+        margin-top:2rem;
+        vertical-align: middle;
+        img {
+          width:20px;
+          height:20px;
+          border-radius:100%;
+          background-color:rgba(255,255,255,.05);
+          margin-right: 5px;
+          margin-left:10px;
+        }
+
+        a {
+          font-weight:bold;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .content {
+      padding:2rem;
+
+      .tabs-wrapper {
+        .tabs-container {
+          max-width:1000px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+  }
+
+}

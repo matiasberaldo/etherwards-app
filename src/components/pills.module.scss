@@ -1,0 +1,49 @@
+.pills {
+  width:100%;
+  padding: 1rem 0;
+  font-size:1.2rem;
+  display:flex;
+
+  :global .filters {
+    flex-grow: 1;
+  }
+
+  :global .status {
+    li {
+      &.selected {
+        font-weight: normal;
+      }
+    }
+  }
+
+  ul {
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    list-style: none;
+    align-items:center;
+
+    :global li {
+      position:relative;
+      padding:1rem 1.5rem;
+      text-align: center;
+      cursor:pointer;
+      background-color:rgba(255,255,255,.1);
+      border-radius:40px;
+      min-width:180px;
+      color:rgba(255,255,255,.5);
+
+      &:not(:last-of-type) {
+        margin-right:20px;
+      }
+
+      &.selected {
+        color:#fff;
+        font-weight: bold;
+        border: 3px solid #fff;
+        background-color:transparent;
+      }
+    }
+  }
+
+}
