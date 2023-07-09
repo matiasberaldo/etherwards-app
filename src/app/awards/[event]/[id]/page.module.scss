@@ -51,6 +51,83 @@
           margin: 0 auto;
         }
       }
+
+      .teams-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:100%;
+        margin: 2rem auto;
+        max-width:1000px;
+
+        .team {
+          display: flex;
+          flex-grow:0;
+          border: 1px solid #fff;
+          max-width:330px;
+          box-sizing: border-box;
+          padding:2rem;
+          border-radius:10px;
+          transition: all .2s;
+          box-shadow:0 0 0 0 #fff;
+          cursor:pointer;
+
+          &.selected {
+            box-shadow:0 0 0 3px #fff;
+          }
+
+          &:hover {
+            box-shadow:0 0 0 3px #fff;
+            transition: all .2s;
+          }
+
+          .name {
+            font-size:1.2rem;
+            font-weight: bold;
+          }
+
+          .image {
+            width:100px;
+            height:100px;
+            background-color:rgba(255,255,255,.2);
+            border-radius:20px;
+            margin-right:20px;
+          }
+        }
+      }
+
+      .controls {
+        display: flex;
+        width:100%;
+        max-width:1000px;
+        margin: 0 auto;
+        padding:2rem 0;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid #fff;
+        font-size:1.2rem;
+
+        .next-wrapper {
+
+          &.disabled {
+            pointer-events: none;
+            opacity:.5;
+          }
+
+          a {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width:100px;
+            border: 2px solid #fff;
+            padding:1rem 6rem;
+            border-radius:40px;
+            font-weight:bold;
+          }
+        }
+      }
+
     }
 
   }
