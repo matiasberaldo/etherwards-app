@@ -28,7 +28,7 @@ const Treasury: React.FC<Props> = () => {
             <p className="project">Bridgeless decentralized crosschain DAO</p>
         </div>
         <div className="show-more">
-            <a href="#"><span>></span> Show 63 more</a>
+            <a href="#"><span>{">"}</span> Show 63 more</a>
         </div>
     </div>
     );

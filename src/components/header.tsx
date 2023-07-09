@@ -6,8 +6,8 @@ import React, { useState, useEffect } from 'react';
 import Breadcrumb from "@/components/breadcrumb";
 
 interface Props {
-    breadcrumb: string;
-    displayBreadcrumb: boolean
+    breadcrumb?: string;
+    displayBreadcrumb?: boolean
 }
 
 const Header: React.FC<Props> = ({ breadcrumb , displayBreadcrumb}) => {

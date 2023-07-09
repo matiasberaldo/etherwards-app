@@ -4,8 +4,13 @@ import styles from './tabs.module.scss';
 
 import React, { useState, useEffect } from 'react';
 
+interface Tab {
+    title: string;
+    selected: boolean;
+}
+
 interface Props {
-    tabs: Array<object>;
+    tabs?: Array<Tab>;
 }
 
 const Tabs: React.FC<Props> = ({ tabs }) => {

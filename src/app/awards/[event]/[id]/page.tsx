@@ -14,7 +14,6 @@ import React, {useEffect, useState} from "react";
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
 interface Props {
-    pills: Array<object>;
 }
 
 const Awards: React.FC<Props> = () => {

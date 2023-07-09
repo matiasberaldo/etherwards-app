@@ -5,7 +5,7 @@ import styles from './pills.module.scss';
 import React, { useState, useEffect } from 'react';
 
 interface Props {
-    pills: Array<object>;
+    pills?: Array<object>;
 }
 
 const Pills: React.FC<Props> = ({ pills }) => {
