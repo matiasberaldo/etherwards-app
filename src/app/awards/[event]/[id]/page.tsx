@@ -7,6 +7,7 @@ import Section from '@/components/section';
 import { Poppins } from 'next/font/google'
 import { usePathname } from 'next/navigation';
 import Tabs from "@/components/tabs";
+import Search from "@/components/search";
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
@@ -43,6 +44,7 @@ export default function Awards() {
                       ]}></Tabs>
                   </div>
               </div>
+              <Search></Search>
           </div>
       </div>
     </main>
